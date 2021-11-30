@@ -1,0 +1,15 @@
+
+
+
+<div class="container-fluid p-5 bg-light"> <!-- bg-light is background color & p-5 is padding -->
+    <h1 class="display-3">
+    <%= @friend.first_name %>
+    <%= @friend.last_name %>
+    </h1>
+    <p class="lead"><strong>Phone:</strong> <%= @friend.phone %><br/> <strong>Email:</strong> <%= @friend.email %></p>
+    <br/>
+    <%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-primary" %> 
+    <%= link_to 'Back', friends_path, class:"btn btn-primary" %>
+</div>
+
+
